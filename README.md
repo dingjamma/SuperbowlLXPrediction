@@ -162,7 +162,7 @@ Yeah, 500% cope but Patriots!
 
 ## 📝 Medium Article
 
-[Coming Soon] - I'll write a full breakdown after the game on February 8, 2026.
+https://medium.com/@dingjamma/nothing-else-matters-building-a-data-driven-super-bowl-prediction-model-6e647b79ad3c
 
 ---
 
