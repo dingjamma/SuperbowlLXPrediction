@@ -1,13 +1,13 @@
 # 🏈 Super Bowl LX Prediction Model
 
-XGBoost Super Bowl prediction model. Found that defense matters way more than regular season wins. Model says it's close. Let's see if it's right.
+XGBoost Super Bowl prediction model. Found that defense and offense matter equally, but regular season wins? Completely irrelevant. Let's see if it's right.
 
 ---
 
 Can machine learning predict the Super Bowl? I built an XGBoost binary classifier to analyze 25 years of Super Bowl data and find out what actually matters for winning.
 
 **Prediction:** New England Patriots (56.7%) vs Seattle Seahawks (51.6%)  
-**Model Edge:** Patriots favored, but close matchup
+**Model Edge:** Patriots favored, but it's close
 
 ---
 
@@ -15,9 +15,9 @@ Can machine learning predict the Super Bowl? I built an XGBoost binary classifie
 
 The most interesting part wasn't the prediction - it was what the data revealed:
 
-- **Defense wins championships** - Winners averaged defensive rank 6.6 vs losers at 9.4
-- **Regular season wins don't matter** - 48% of Super Bowls were won by the team with fewer wins
-- **Offense + defense combined** matters more than either alone
+- **Regular season wins literally don't matter** - Model gave it 0.0% importance. The 48% upset rate confirms this.
+- **Defense and offense are equally important** - 36.6% vs 35.2%, nearly identical
+- **Balanced teams win championships** - You need both sides of the ball
 
 ---
 
@@ -32,6 +32,7 @@ The most interesting part wasn't the prediction - it was what the data revealed:
 ---
 
 ## 📁 Project Structure
+
 ```
 ├── Super60Prediction.ipynb         # Full analysis notebook
 ├── superbowl_historical_data.csv   # Training data (2000-2024)
@@ -81,7 +82,7 @@ This would output proper relative probabilities (e.g., 55% vs 45%).
 
 ### Why I Kept It This Way
 - Simpler to understand and explain
-- Shows feature importance clearly (defense matters!)
+- Shows feature importance clearly (defense + offense matter, wins don't!)
 - Still provides directional insight (Patriots have higher win probability)
 - Honest about limitations
 
@@ -93,14 +94,17 @@ For a production model, I'd restructure for head-to-head comparison. For a learn
 
 What matters most for winning the Super Bowl?
 
-1. **Conference (NFC/AFC)** - 28.2%
-2. **Defensive Ranking** - 26.7%
-3. **Regular Season Wins** - 23.0%
-4. **Offensive Ranking** - 22.1%
+1. **Defensive Ranking** - 36.6%
+2. **Offensive Ranking** - 35.2%
+3. **Conference (NFC/AFC)** - 28.2%
+4. **Regular Season Wins** - 0.0%
+
+**Key insight:** Regular season wins literally don't matter at all to the model! Defense and offense are nearly equal (~36% and ~35%), confirming that balanced teams win championships. The 48% upset rate we found makes perfect sense now.
 
 ---
 
 ## 🚀 How to Run
+
 ```bash
 # Clone the repo
 git clone https://github.com/dingjamma/SuperbowlLXPrediction.git
@@ -122,7 +126,8 @@ This project taught me:
 - Small datasets require careful interpretation
 - Sometimes "I don't know" is the most honest answer
 - Feature importance can reveal insights even when accuracy is low
-- Defense really does win championships
+- Regular season wins are meaningless for predicting Super Bowl winners
+- Defense and offense matter equally - balance wins championships
 - Model limitations are worth acknowledging
 
 ---
