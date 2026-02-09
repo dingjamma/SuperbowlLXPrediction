@@ -174,4 +174,4 @@ https://medium.com/@dingjamma/nothing-else-matters-building-a-data-driven-super-
 
 ---
 
-**Update after Super Bowl LX:** [TBD - Check back February 9, 2026]
+**Update after Super Bowl LX:** Too much cope, offensive line is too much.
